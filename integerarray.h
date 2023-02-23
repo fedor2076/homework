@@ -8,8 +8,8 @@ public:
 	~IntegerArray();
 
 	IntegerArray& operator=(const IntegerArray& a);
-	void erase();//удаление массива
 	int& operator[](int index);
+	void erase();//удаление массива
 	int getLength() const;//размер
 	void reallocate(int newLength);//изменение размер удаление элементов массива
 	void resize(int newLength);//изменение размер сохранение элементов массива

@@ -41,8 +41,6 @@ int& IntegerArray::operator[](int index)
 	catch (const std::exception& e)
 	{
 		std::cerr << "Caught: " << e.what() << "\n";
-		//std:cout << " index " << index << "\n";
-
 	};
 
 	return _data[index];
@@ -107,7 +105,6 @@ void IntegerArray::insertBefore(int value, int index)
 		std::cerr << "Caught: " << e.what() << "\n";
 	}
 
-
 	int* data{ new int[_length + 1] };
 	for (int before{ 0 }; before < index; ++before)
 		data[before] = _data[before];
@@ -123,7 +120,7 @@ void IntegerArray::remove(int index)
 {
 	try
 	{
-		 if ((0 > index) || (index > _length))
+		if ((0 > index) || (index > _length))
 			throw std::out_of_range(" remove - index out of range ");
 	}
 	catch (const std::exception& e)
