@@ -17,6 +17,7 @@ public:
 	void remove(int index);//удаление элемента index
 	void insertAtBeginning(int value);//вставка 1 элемента
 	void insertAtEnd(int value);//вставка последнего элемента
+	void search(int value);//поиск по значению
 
 private:
 	int _length{};

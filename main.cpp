@@ -17,7 +17,10 @@ int main()
 
 	array.insertAtEnd(30);
 
-	array.insertAtBeginning(40);
+	array.insertAtBeginning(6);
+
+	array.search(6);
+
 
 	for (int i{ 0 }; i < array.getLength(); ++i)
 		std::cout << array[i] << "  ";

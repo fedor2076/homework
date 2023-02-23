@@ -140,6 +140,13 @@ void IntegerArray::remove(int index)
 	_data = data;
 	--_length;
 }
+void IntegerArray::search(int value)
+{
+	for (int search{ 0 }; search < _length; ++search)
+		if (_data[search] == value)
+			std::cout << "Element[" << search << "]" << " = " << value << "\n";
+	
+}
 void IntegerArray::insertAtBeginning(int value)
 {
 	insertBefore(value, 0);
